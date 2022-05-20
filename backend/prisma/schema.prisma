@@ -26,6 +26,8 @@ model Tasks {
   description String
   createdAt   DateTime
   updatedAt   DateTime
+  completed   Boolean
+
 
   userId String?
   Users  Users?  @relation(fields: [userId], references: [id])
